@@ -1,0 +1,12 @@
+[project]
+name = "django-protect"
+version = "0.1"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = ["django"]
+
+[tool.pytest.ini_options]
+testpaths = ["django_protect_test"]
+DJANGO_SETTINGS_MODULE = "django_protect_test.settings"
+pythonpath = "."
