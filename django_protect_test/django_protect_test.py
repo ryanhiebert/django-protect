@@ -1,7 +1,8 @@
 import pytest
+from django.contrib.auth.models import AnonymousUser
+from django.contrib.auth.models import User
 
 from django_protect import auth
-from django.contrib.auth.models import AnonymousUser, User
 
 
 class TestAuth:

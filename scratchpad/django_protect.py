@@ -1,9 +1,14 @@
-from typing import Callable, overload, Iterator
+from contextlib import ExitStack
+from contextlib import contextmanager
+from contextvars import ContextVar
+from contextvars import Token
 from dataclasses import dataclass
-from contextvars import ContextVar, Token
-from contextlib import contextmanager, ExitStack
-from django.contrib.auth.models import AbstractBaseUser, AnonymousUser
+from typing import Callable
+from typing import Iterator
+from typing import overload
 
+from django.contrib.auth.models import AbstractBaseUser
+from django.contrib.auth.models import AnonymousUser
 
 # class __Authn:
 #     def __init__(self):

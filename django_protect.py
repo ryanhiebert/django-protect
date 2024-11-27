@@ -1,7 +1,8 @@
 from collections.abc import Iterator
-from contextvars import ContextVar
 from contextlib import contextmanager
+from contextvars import ContextVar
 from dataclasses import dataclass
+
 from django.contrib.auth.models import AbstractBaseUser
 from django.contrib.auth.models import AnonymousUser
 
